@@ -1,0 +1,30 @@
+#Challenge 34
+
+from time import strftime
+
+weekday = input("Please enter the weekday: ")
+
+month = input("Please enter the month: ")
+
+year = int(input("Please enter the year: "))
+
+correctWeekday = strftime("%A")
+correctMonth = strftime("%B")
+correctYear = strftime("%Y")
+
+if weekday == correctWeekday:
+    print("You got the day correct")
+else:
+    print(f"The correct day is {correctWeekday}")
+
+if month == correctMonth:
+    print("You got the month is correct")
+else:
+    print(f"The correct month is {correctMonth}")
+
+if year == correctYear:
+    print("You got the year correct")
+else:
+    print(f"The correct year is {correctYear}")
+
+print(f"The correct date in full is {correctWeekday} {correctMonth} {correctYear}")
